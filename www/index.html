@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.min.css">
-    <link rel="stylesheet" href="css/jquery-clockpicker.min.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
   </head>
@@ -179,7 +179,7 @@
                       <div class="item-inner">
                         <div class="item-title label">Time:</div>
                         <div class="item-input">
-                          <input type="text" id="time-picker" value="10:00" placeholder="pick a time" data-default="10:00">
+                          <input type="text" id="time-picker" value="10:00" placeholder="pick a time" data-time-format="H:i:s">
                         </div>
                       </div>
                     </div>
@@ -216,14 +216,12 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <script type="application/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="application/javascript" src="js/jquery-clockpicker.min.js"></script>
+    <script type="application/javascript" src="js/jquery.timepicker.min.js"></script>
     <script type="application/javascript" src="js/json2.js"></script>
     <script type="application/javascript" src="js/jstorage.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript">
-      $('#time-picker').clockpicker({
-          autoclose: false
-      });
+      $('#time-picker').timepicker({ 'timeFormat': 'H:i:s' });
     </script>
     <script type="text/javascript" src="js/my-app.js"></script>
     
