@@ -6,7 +6,7 @@
         id        = "me.hzhou.TODO"
         version   = "1.0.0">
 
-    <name>HelloWorld</name>
+    <name>TODO List</name>
 
     <description>
         A very simple app for TODO list.
